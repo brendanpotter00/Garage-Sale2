@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+    padding: 2em;
+    padding-bottom: 70em;
+
+    color: rgb(158, 158, 158);
+    font-size: calc(10px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+    height: 100%;
+    margin: 0px;
+
+}
+.aboutImg {
+    display: flex;
+    margin-top: 1em;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 10px;
+    cursor: pointer;
+}

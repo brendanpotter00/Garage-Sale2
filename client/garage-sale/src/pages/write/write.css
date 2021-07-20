@@ -1,0 +1,93 @@
+:root {
+    --publish: #599b1b;
+    --text: rgb(149, 149, 149);
+}
+
+
+.write {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background: linear-gradient(.25turn,#3a3a3a, 70%,#2a2929);
+    display: flex;
+    flex-direction: column;
+}
+  
+  .writeImg {
+    
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 85%;
+    height: 40vw;
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+  
+  .writeForm {
+    position: relative;
+  }
+  
+  .writeFormGroup {
+    margin-left: 2em;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .writeIcon {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .writeInput {
+    font-size: calc(25px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
+    background-color:inherit;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    color: rgb(158, 158, 158);
+  }
+  
+  .writeInput::placeholder {
+    color: var(--text);
+    font-weight: 400;
+  }
+  
+  .writeInput:focus {
+    outline-style: none;
+  }
+  
+  .writeText {
+    width: 70vw;
+    height: 100vh;
+    font-family: inherit;
+    font-size: calc(15px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+  
+  .writeSubmit {
+    position: relative;
+    top: 2em;
+    left: 2em;
+    right: 2em;
+    color: white;
+    background-color: var(--publish);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: calc(15px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+    cursor: pointer;
+    
+    
+    
+
+    border: 1px solid red;
+  }
+  

@@ -1,0 +1,125 @@
+
+:root {
+    --edit: #61ff05;
+    --date: #999999;
+    --info: #888888;
+    --title: #e6e6e6;
+    --trash: rgb(173, 80, 80);
+    --desc: rgb(143, 143, 143);
+}
+
+.singlePost {
+    flex: 9;
+    padding-bottom: 40em;
+}
+.singlePostWrapper {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostImg {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 85%;
+    height: 40vw;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.singlePostTitle {
+    text-align: center;
+    color: white;
+    margin: 1em;
+   
+    font-size: calc(25px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Roboto Slab', serif;
+}
+
+.singlePostTitleInput {
+  margin: 1em;
+  font-family: "Lora", serif;
+  font-size: calc(25px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+  border: none;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+  background-color: inherit;
+}
+
+.singlePostTitleInput:focus {
+  outline: none;
+}
+  
+  .singlePostEdit {
+    float: right;
+    font-size: 16px;
+    margin-top: 3em;
+    
+  }
+  
+  .singlePostIcon {
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  
+  .singlePostIcon:first-child {
+    color: var(--edit);
+  }
+  .singlePostIcon:last-child {
+    color: var(--trash);
+  }
+  
+  .singlePostInfo {
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--info);
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  }
+  
+  .singlePostAuthor{
+    
+  }
+  
+  .singlePostDesc {
+    color: var(--desc);
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .singlePostDesc::first-letter {
+    margin-left: 1em;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .singlePostButton {
+    width: 100px;
+    border: none;
+    background-color: rgb(36, 110, 54);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 1em;
+    margin-right: 2em;
+  }
+  .singlePostButton:hover {
+    background-color: rgb(48, 148, 73);
+  }
+  .singlePostDescInput {
+    border: solid 1px rgb(92, 92, 92);
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: inherit;
+    margin: 2em;
+  }
+  
+  .singlePostDescInput:focus {
+    outline: none;
+  }

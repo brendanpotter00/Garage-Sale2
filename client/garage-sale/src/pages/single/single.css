@@ -1,0 +1,4 @@
+.single {
+    display: flex;
+    background: linear-gradient(.25turn,#3a3a3a, 70%,#2a2929);
+}
