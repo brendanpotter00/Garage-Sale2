@@ -34,6 +34,21 @@ const storage = multer.diskStorage({
   },
 });
 
+//heroku
+if (process.env.NODE_ENV === 'production') {
+  ///client/garage-sale/build
+  app.use(express.static(path.join(__dirname,'client/garage-sale/build')));
+
+  app.get('*', (req, red) => {
+    //'client', 'garage-sale', 'build', 'index.html'
+    res.sendFile(path.join(__dirname, 'client', 'garage-sale', 'build', 'index.html'));
+  })
+} else {
+  app.get("/", (req,res) => {
+    res.send("api running");
+  })
+}
+
 const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
@@ -44,6 +59,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("5000" || PORT, () => {
+app.listen(PORT || "5000", () => {
   console.log("Backend is running.");
 });
